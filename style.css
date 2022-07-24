@@ -149,10 +149,15 @@ span{
     box-shadow: 0px  10px 15px rgba(0, 0, 0, .3);
     padding-bottom: 20px;
 }
+
+.front-end .projects .post .web-img{
+    width: 100%;
+    position: relative;
+}
 .front-end .projects .post img{
     height: 350px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .front-end .projects .post .text{
     width: 80%;
@@ -190,7 +195,7 @@ span{
 .back-end .projects .content img {
     height: 350px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .back-end .projects .content .info {
@@ -246,5 +251,20 @@ i{
     font-size: 25px;
     color: #fff;
     padding: 10px;
+}
+
+
+
+@media(max-width: 425px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        /* font-size: 10px; */
+    } 
+    .front-end{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
